@@ -1,0 +1,14 @@
+    public:
+    int kthElement(int arr1[], int arr2[], int n, int m, int k)
+    {
+        vector<int> piy;
+        for(int i=0;i<n;i++){
+            piy.push_back(arr1[i]);
+        }
+        for(int i=0;i<m;i++){
+            piy.push_back(arr2[i]);
+        }
+        sort(piy.begin(),piy.end());
+        return piy[k-1];
+    }
+};
